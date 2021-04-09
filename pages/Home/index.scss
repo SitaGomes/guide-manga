@@ -1,0 +1,5 @@
+@use './assets/scss/' as *;
+
+#title{
+    @include flex;
+}

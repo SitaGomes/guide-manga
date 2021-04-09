@@ -1,0 +1,23 @@
+@use './assets/scss' as *;
+@use '~bootstrap/scss/bootstrap.scss';
+@use '~bootstrap-vue/src/index.scss';
+
+* {
+  @include reset;
+}
+#root{
+  @include flex;
+}
+.h-container{
+  width: $headerContainer;
+  
+  nav{
+    @include flex ($justify-content: space-around);
+    font-size: $fontSize;
+    padding: $padding;
+    
+    a{
+      text-decoration: none;
+    }
+  }
+}
